@@ -101,7 +101,7 @@ function App() {
         </Box>
         { messages.length > 0 ? (
         <Box sx={{display:'flex', alignItems:'flex-end'}}>
-          <div style={{ display: 'flex', alignItems:'flex-end', width: '100%', minHeight: '60vh'}}>
+          <div style={{ display: 'flex', alignItems:'flex-end', width: '100%', minHeight: smDown? '55vh':'60vh'}}>
 
           <List sx={StyleList} id='myElement'>
             {messages.map((item) => (
