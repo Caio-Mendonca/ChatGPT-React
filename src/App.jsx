@@ -149,7 +149,7 @@ function App() {
           <Button  variant="outlined" color="secondary" sx={{marginBottom: 2}} onClick={()=> handleCleanMessages()}>Limpar histórico</Button>
         ) : (<></>)}
         </Box>
-        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', borderRadius: '10px', marginBottom: smDown ? 2 : 1}}>
+        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', borderRadius: '10px', marginBottom: smDown ? 5 : 1}}>
           <TextField
             type="text"
             color="primary"
