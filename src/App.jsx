@@ -94,7 +94,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <body>
-      <Box sx={{  width: '90vw', height: '90vh', margin: 'auto', padding: 2, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
+      <Box sx={{  width: '90vw', height: '90vh', margin: 'auto', paddingTop: 2,  paddingBottom: 2, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
         <Box sx={{  width: smDown ? '100%' : '80%'}}>
         <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? 5 : 5, marginBottom: 5}}>
           <img src="/logo.png" style={{ width: '50%', maxWidth: '250px', maxHeight: '250px'}}/>  
