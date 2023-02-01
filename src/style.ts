@@ -3,9 +3,11 @@ export const StyleList = {
   bgcolor: 'background.default',
   position: 'relative',
   overflowY: 'auto',
+  overflowX: 'hidden',
   textAlign: 'center',
+  marginBottom: 1,
   padding: 0,
-  maxHeight: 600,
+  maxHeight: '60vh',
   '& ul': { padding: 0 },
   '&::-webkit-scrollbar': { width: 12 },
   '&::-webkit-scrollbar-track': {
