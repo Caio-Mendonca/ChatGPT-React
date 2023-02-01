@@ -111,7 +111,7 @@ function App() {
                   <Box sx={{justifyContent: 'flex-end', alignItems: 'center', display: 'flex', width:'100%', margin:1}}>
                     <Box sx={{ backgroundColor: "#16315C", borderRadius:2, display: 'flex', padding: 1 }}>
                         <Typography 
-                        sx={{justifyContent: 'center', alignItems: 'center', display: 'flex',margin: 'auto', width: '100%', textAlign: 'center'}}
+                        sx={{justifyContent: 'center', alignItems: 'center', display: 'flex',margin: 'auto', width: '100%', textAlign: 'start'}}
                         variant="h7"
                         component="p"
                         color="white"
@@ -126,7 +126,7 @@ function App() {
 
                     <Box sx={{ backgroundColor: "#D9D9D9", borderRadius:2, display: 'flex', padding: 1 }}>
                       <Typography 
-                      sx={{justifyContent: 'center', alignItems: 'center', display: 'flex',margin: 'auto', width: '100%', textAlign: 'center'}}
+                      sx={{justifyContent: 'center', alignItems: 'center', display: 'flex',margin: 'auto', width: '100%', textAlign: 'start'}}
                       variant="h7"
                       component="p"
                       color="primary"
