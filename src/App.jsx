@@ -1,7 +1,7 @@
 import { Configuration, OpenAIApi } from "openai";
 import { OptionQA} from "./AIOptions";
 import { useEffect, useState, useCallback } from "react";
-import { Box, Button, TextField, Typography,ListItem, IconButton, List } from "@mui/material";
+import { Box, Button, TextField, Typography,ListItem,useMediaQuery, IconButton, List } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import SearchIcon from '@mui/icons-material/Search';
 import { StyleList } from './style'
@@ -25,6 +25,8 @@ function App() {
   const [result, setResult] = useState("");
   const [input, setInput] = useState("");
   const [ loadgin, setLoading] = useState(false);
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'))
+
   const [ messages, setMessages] = useState([]);
   const [ currentId, setCurrenteId] = useState(0);
   const [errorField, setErrorField] = useState(false);
@@ -93,8 +95,8 @@ function App() {
     <ThemeProvider theme={theme}>
     <body>
       <Box sx={{  width: '90vw', height:'90vh', margin: 'auto', padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
-        <Box sx={{  width: '80%'}}>
-        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: 2, marginBottom: 10}}>
+        <Box sx={{  width: smDown ? '100%' : '80%'}}>
+        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? 10 : 2, marginBottom: smDown ? 5 : 10}}>
           <img src="/logo.png" style={{ width: '70%', maxWidth: '300px', maxHeight: '300px'}}/>  
         </Box>
         { messages.length > 0 ? (
