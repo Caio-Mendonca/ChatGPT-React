@@ -44,6 +44,7 @@ function App() {
   }, [])
   useEffect(() => {
     document.addEventListener('keypress', handleKeyPress)
+    document.body.style.overflow = 'hidden'
     const oldMessages = JSON.parse(localStorage.getItem('messages'))
     if(oldMessages){
       setMessages(oldMessages)
@@ -96,7 +97,7 @@ function App() {
     <body>
       <Box sx={{  width: '90vw', height: '90vh', margin: 'auto', paddingTop: 2,  paddingBottom: 2, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
         <Box sx={{  width: smDown ? '100%' : '80%'}}>
-        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? 10 : 5, marginBottom: 5}}>
+        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? '2rem' : 5, marginBottom: '1rem'}}>
           <img src="/logo.png" style={{ width: '50%', maxWidth: '250px', maxHeight: '250px'}}/>  
         </Box>
         { messages.length > 0 ? (
@@ -149,7 +150,7 @@ function App() {
           <Button  variant="outlined" color="secondary" sx={{marginBottom: 2}} onClick={()=> handleCleanMessages()}>Limpar histórico</Button>
         ) : (<></>)}
         </Box>
-        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', borderRadius: '10px', marginBottom: smDown ? 5 : 1}}>
+        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', borderRadius: '10px', marginBottom: 1}}>
           <TextField
             type="text"
             color="primary"
@@ -172,6 +173,11 @@ function App() {
                 <SearchIcon color="secondary"/>
             </IconButton>
           </Box>
+        </Box>
+        <Box sx={{display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>
+          <Typography             color="primary">
+            Powerd by JMD Urbanismo
+          </Typography>
         </Box>
         </Box>
       </Box>
