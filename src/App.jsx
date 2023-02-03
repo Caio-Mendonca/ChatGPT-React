@@ -97,7 +97,7 @@ function App() {
     <body>
       <Box sx={{  width: '90vw', height: '90vh', margin: 'auto', paddingTop: 2,  paddingBottom: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
         <Box sx={{  width: smDown ? '100%' : '80%'}}>
-        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? '2rem' : 5, marginBottom: '1rem'}}>
+        <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? '3rem' : 5, marginBottom: '1rem'}}>
           <img src="/logo.png" style={{ width: '50%', maxWidth: '250px', maxHeight: '250px'}}/>  
         </Box>
         { messages.length > 0 ? (
