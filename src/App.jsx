@@ -181,8 +181,8 @@ function App() {
         <Typography color="primary">
           Powered by  
         </Typography>
-        <img src="./logoJmd.png" style={{ maxWidth: '80px', maxHeight: '80px', marginLeft: 3}}/> 
-        <img src="./hamoa.png" style={{ maxWidth: '70px', maxHeight: '50px', marginLeft: 3}}/>
+        <img src="./logoJmd.png" style={{ maxWidth: '80px', maxHeight: '80px', marginLeft: 10}}/> 
+        <img src="./hamoa.png" style={{ maxWidth: '70px', maxHeight: '50px', marginLeft: 10}}/>
       </Box>
     </body>
     </ThemeProvider>
