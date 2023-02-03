@@ -95,7 +95,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <body>
-      <Box sx={{  width: '90vw', height: '90vh', margin: 'auto', paddingTop: 2,  paddingBottom: 2, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
+      <Box sx={{  width: '90vw', height: '90vh', margin: 'auto', paddingTop: 2,  paddingBottom: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
         <Box sx={{  width: smDown ? '100%' : '80%'}}>
         <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? '2rem' : 5, marginBottom: '1rem'}}>
           <img src="/logo.png" style={{ width: '50%', maxWidth: '250px', maxHeight: '250px'}}/>  
@@ -174,12 +174,15 @@ function App() {
             </IconButton>
           </Box>
         </Box>
-        <Box sx={{display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>
-          <Typography             color="primary">
-            Powerd by JMD Urbanismo
-          </Typography>
+
         </Box>
-        </Box>
+      </Box>
+      <Box sx={{display: 'flex', justifyContent: 'center', marginBottom: '3rem', alignItems: 'center'}}>
+        <Typography color="primary">
+          Powered by  
+        </Typography>
+        <img src="./logoJmd.png" style={{ maxWidth: '80px', maxHeight: '80px', marginLeft: 3}}/> 
+        <img src="./hamoa.png" style={{ maxWidth: '70px', maxHeight: '50px', marginLeft: 3}}/>
       </Box>
     </body>
     </ThemeProvider>
