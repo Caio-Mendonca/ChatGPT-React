@@ -56,7 +56,13 @@ function App() {
       setErrorField(true)
       return
     }
-    let object = { ...option, prompt: input };
+    let object = { 
+      ...option, 
+      prompt: input, 
+      model: "ft:davinci-002:personal::8sF24UFg",
+      max_tokens: 256,
+      stop: ["\n", "."], 
+    };
     setErrorField(false)
     setLoading(true)
     setInput('')
@@ -98,7 +104,7 @@ function App() {
       <Box sx={{  width: '90vw', height: '90vh', margin: 'auto', paddingTop: 2,  paddingBottom: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '1000px'}}>
         <Box sx={{  width: smDown ? '100%' : '80%'}}>
         <Box sx={{ justifyContent: 'center', alignItems: 'center', display: 'flex', width: '100%', marginTop: smDown ? '3rem' : 5, marginBottom: '1rem'}}>
-          <img src="/logo.png" style={{ width: '50%', maxWidth: '250px', maxHeight: '250px'}}/>  
+          <img src="/lauramatos.png" style={{ width: '50%', maxWidth: '150px', maxHeight: '150px'}}/>  
         </Box>
         { messages.length > 0 ? (
         <Box sx={{display:'flex', alignItems:'flex-end'}}>
@@ -176,13 +182,6 @@ function App() {
         </Box>
 
         </Box>
-      </Box>
-      <Box sx={{display: 'flex', justifyContent: 'center', marginBottom: '3rem', alignItems: 'center'}}>
-        <Typography color="primary">
-          Powered by  
-        </Typography>
-        <img src="./logoJmd.png" style={{ maxWidth: '80px', maxHeight: '80px', marginLeft: 10}}/> 
-        <img src="./hamoa.png" style={{ maxWidth: '70px', maxHeight: '50px', marginLeft: 10}}/>
       </Box>
     </body>
     </ThemeProvider>
